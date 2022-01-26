@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <div id="app_tareas">
+        <input v-model="nueva_tarea" type="text" id="añadir_tarea" name="añadir_tarea" placeholder="Apunta tus Tareas">
+
+        <select name="prioridad" v-model="prioridad">
+            <option value="Alta">Alta</option>
+            <option value="Media" selected>Media</option>
+            <option value="Baja">Baja</option>
+        </select>
+
+        <button v-on:click="añadir">añadir</button>
+        <ul>
+            <li v-for="objeto_tarea in listado_tareas">
+                <div>
+                    {{objeto_tarea.tarea}} <button v-on:click="borra(index)">Borrar tarea</button> Prioridad {{objeto_tarea.prioridad}}
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
