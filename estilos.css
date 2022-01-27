@@ -4,13 +4,11 @@ body {
 
 .tarea {
     z-index: 1;
-    margin-top: 2%;
-    margin-left: 37%;
-    display: flex;
-    flex-direction: column;
     padding: 3vh;
     background-color: #CE7BB0;
     width: 40vh;
+    margin: 0 auto;
+    margin-top: 2%;
 }
 
 img {
@@ -38,6 +36,7 @@ img {
 }
 
 .tarea input {
+    width: 30vh;
     z-index: 1;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 26px;
@@ -52,12 +51,12 @@ img {
 }
 
 select {
+    width: 38vh;
     background-color: #FFBCD1;
     border: none;
     font-size: 14px;
     height: 30px;
     padding: 5px;
-    width: 250px;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 16px;
     letter-spacing: -1px;
@@ -71,6 +70,7 @@ select {
 }
 
 .añadir {
+    margin-top: 2vh;
     background: #FFBCD1;
     background-image: linear-gradient(to bottom, #FFBCD1, #f36e98);
     -webkit-border-radius: 28;
