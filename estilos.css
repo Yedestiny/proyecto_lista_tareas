@@ -1,0 +1,149 @@
+body {
+    background-color: #FFBCD1;
+}
+
+.tarea {
+    z-index: 1;
+    margin-top: 2%;
+    margin-left: 37%;
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+    background-color: #CE7BB0;
+    width: 40vh;
+}
+
+img {
+    position: fixed;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.tarea h1 {
+    z-index: 1;
+    color: #58579e;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 29px;
+    letter-spacing: -1.2px;
+    word-spacing: 3px;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+
+.tarea input {
+    z-index: 1;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 26px;
+    letter-spacing: -1px;
+    word-spacing: 1.2px;
+    color: #D885A3;
+    font-weight: 800;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
+
+select {
+    background-color: #FFBCD1;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 16px;
+    letter-spacing: -1px;
+    word-spacing: 1.2px;
+    color: #58579e;
+    font-weight: 800;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.añadir {
+    background: #FFBCD1;
+    background-image: linear-gradient(to bottom, #FFBCD1, #f36e98);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+span {
+    z-index: 1;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.6px;
+    word-spacing: -0.2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+h3 {
+    z-index: 1;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 26px;
+    letter-spacing: -1px;
+    word-spacing: 1.2px;
+    color: #58579e;
+    font-weight: 800;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.tarea li {
+    z-index: 1;
+    margin: 3vh;
+    list-style: none;
+}
+
+.efecto-enter-active {
+    z-index: 1;
+    transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.efecto-leave-from,
+.efecto-enter-to {
+    z-index: 1;
+    transform: rotateX(-20px);
+    opacity: 60%;
+}
+
+.efecto-leave-active {
+    z-index: 1;
+    transition: all 1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.efecto-enter-from,
+.efecto-leave-to {
+    z-index: 1;
+    transform: translateX(20px);
+    opacity: 10%;
+}
+
+.tarera_completada {
+    z-index: 1;
+    text-decoration: line-through red 2px;
+    color: gray;
+    background-color: rgb(219, 91, 52);
+}
